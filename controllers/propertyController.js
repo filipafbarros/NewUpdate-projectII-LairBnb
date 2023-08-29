@@ -1,6 +1,5 @@
 const express = require("express");
 const Property = require("../models/Property.model");
-const Host = require("../models/Host.model");
 
 // CREATE PROPERTY FUNCTION
 const createProperty = async (req, res) => {
@@ -14,18 +13,6 @@ const createProperty = async (req, res) => {
     rating,
     maxGuests,
   } = req.body;
-
-  // const images = [];
-  // if (req.files && req.files.images) {
-  //   const imageFiles = Array.isArray(req.files.images)
-  //     ? req.files.images
-  //     : [req.files.images];
-
-  //   for (const file of imageFiles) {
-  //     const result = await cloudinary.uploader.upload(file.path);
-  //     images.push(result.secure_url);
-  //   }
-  //}
 
   console.log(req.body);
 

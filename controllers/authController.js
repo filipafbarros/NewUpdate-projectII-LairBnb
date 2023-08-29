@@ -1,7 +1,6 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const User = require("../models/User.model.js");
-const Host = require("../models/Host.model.js");
 const mongoose = require("mongoose");
 
 // Register User
